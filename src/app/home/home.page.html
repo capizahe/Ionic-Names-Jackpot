@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Names Jackpot
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="text_area">
+    <ion-item>
+      <ion-textarea placeholder="Enter names separed by ','"[(ngModel)]="nombres"></ion-textarea>
+    </ion-item>
+  </div>
+
+  <div class="play-button">
+    <ion-item>
+      <ion-button color="primary" size="large" (click)="addNames()">PLAY</ion-button>
+    </ion-item>
+  </div>
+
+  <div class="name">
+    <ion-label>{{nombre_actual}}</ion-label>
+  </div>
+
+
+</ion-content>
